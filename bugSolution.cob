@@ -1,0 +1,10 @@
+01  WS-DATA-AREA. 
+    05  WS-NUMBER PIC 9(5) VALUE 99999. 
+    05  WS-NUMBER-PLUS-ONE PIC 9(6). 
+
+       ADD 1 TO WS-NUMBER. 
+       MOVE WS-NUMBER TO WS-NUMBER-PLUS-ONE. 
+       DISPLAY WS-NUMBER-PLUS-ONE. 
+       IF WS-NUMBER-PLUS-ONE > 99999 
+           DISPLAY "Overflow occurred!" 
+       END-IF.
